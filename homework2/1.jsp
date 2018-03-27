@@ -9,12 +9,12 @@
 	<div id="top">
 		<form name="form1" method="post">
 		<p align="center">
-		<h1>��ӭע��</h1><br>
-			�����˺�:<input type="text" name="num1" id="num1" value="" />
-			��������:<input type="password" name="num2" id="num2" value="" /><br>
+		<h1>»¶Ó­×¢²á</h1><br>
+			ÊäÈëÕËºÅ:<input type="text" name="num1" id="num1" value="" />
+			ÊäÈëÃÜÂë:<input type="password" name="num2" id="num2" value="" /><br>
 			</p>
 		</form>
-			<p align="center"> <a href="#" onclick="pass()"> <input type="button" value="�ύ" /> </a>
+			<p align="center"> <a href="#" onclick="pass()"> <input type="button" value="Ìá½»" /> </a>
 			</p>
 	</div>
 	<div id="left">
