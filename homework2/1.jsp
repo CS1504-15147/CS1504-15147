@@ -11,7 +11,7 @@
 		<p align="center">
 		<h1>»欢迎注册</h1><br>
 			输入账号:<input type="text" name="num1" id="num1" value="" />
-			ÊäÈëÃÜÂë:<input type="password" name="num2" id="num2" value="" /><br>
+			输入密码:<input type="password" name="num2" id="num2" value="" /><br>
 			</p>
 		</form>
 			<p align="center"> <a href="#" onclick="pass()"> <input type="button" value="Ìá½»" /> </a>
