@@ -2,7 +2,11 @@
 <html>
 	<script>
 		function pass(){
-			window.location="a6.jsp?b="+document.form1.num1.value+" "+document.form1.num2.value;
+			var a=document.form1.num1.value||document.form1.num2.value;
+			if(a!=0)
+				window.location="a6.jsp?b="+document.form1.num1.value+" "+document.form1.num2.value;
+			else
+				window.alert("输入为空或错误");
 		}
 	</script>
 <body>
