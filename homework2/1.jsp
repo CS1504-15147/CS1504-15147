@@ -9,8 +9,8 @@
 	<div id="top">
 		<form name="form1" method="post">
 		<p align="center">
-		<h1>»¶Ó­×¢²á</h1><br>
-			ÊäÈëÕËºÅ:<input type="text" name="num1" id="num1" value="" />
+		<h1>»欢迎注册</h1><br>
+			输入账号:<input type="text" name="num1" id="num1" value="" />
 			ÊäÈëÃÜÂë:<input type="password" name="num2" id="num2" value="" /><br>
 			</p>
 		</form>
