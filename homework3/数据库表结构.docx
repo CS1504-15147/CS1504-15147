@@ -1,0 +1,32 @@
+/*  用户表  */
+create table 'customer'(
+	'id' varchar(18) not null comment '账号设为主键',
+	'secret' varchar(18) not null comment '密码',
+	'zctime' datetime not null comment '注册时间',
+	'status' int(1) not null comment '账号类型: 0普通用户，1为管理员'
+	primary key ('id')
+)
+
+/*  图书表  */
+create table 'books'(
+	'bookid' int(10) not null auto_increment comment '图书ID设为主键',
+	'bookname' varchar(80) not null comment '书名',
+	'auther' varchar(20) not null comment '作者',
+	'number' int(8) default null comment '数量',
+	'type' int(8) not null comment '类别从右向左数分别为:少儿、学术、科学、历史、军事、科幻、玄幻、地理',
+	'image' varchar(128) default null comment '图书图片',
+	'introduction' varchar(4096) not null comment '图书简介',
+	'money' float unsigned not null comment '图书价格',
+	primary key ('bookid')
+)
+
+/*  订单表  */
+create table 'orders'(
+	'orderid' int(16) not null auto_increment comment '订单号',
+	'id' varchar(18) not null comment '用户账号,外键',
+	'bookid' int(10) not null comment '图书ID,外键',
+	'money' float not null comment '价格'
+	'orderstatus' int(1) not null comment '支付状态:0为未支付,1为已支付'，
+	foreign key('id') references customer('id'),
+	foreign key('bookid','money') references books('bookid','money')
+)
